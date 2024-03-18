@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    padding: 50px;
+}
+.home-header button{
+    text-transform: capitalize;
+    background-color: white;
+    border-radius: 999px;
+    border: none;
+    padding: 15px 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.hero{
+    background-image: url("../images/bg-hero-desktop.svg");
+}
+
+.cont-1{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.cont-1 .fans, .cont-1 img{
+    flex: 1;
+    width: 50%;
+}
+.cont-1 h1, .fans button{
+    text-transform: capitalize;
+}
+.fans button{
+    width:  fit-content;
+    background-color: rgb(241, 32, 158);
+    margin-top: 50px;
+    padding: 15px 20px;
+    border-radius: 999px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.cont-1 p{
+    margin-top: 20px;
+    color: gray;
+}
+
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 35px 55px;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.conversation-block{
+    flex-direction: row-reverse;
+}
+
+.get-ready h2{
+    text-transform: capitalize;
+    color: #000;
+}
+
+.get-ready button{
+    width:  fit-content;
+    background-color: rgb(241, 32, 158);
+    margin-top: 50px;
+    padding: 15px 20px;
+    border-radius: 999px;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+footer{
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    padding: 50px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.footer-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.copyright{
+    float: right;
+    /* margin-top: 50px; */
+}
+
+.about p, .contact div{
+    margin-top: 15px;
+}
+
+.location{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+}
+.social .fa-brands{
+    outline: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.footer-logo{
+    padding: 50px 0 20px 0;
+}
+
+.get-ready{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+    border-radius: 10px;
+    z-index: 10;
+    position: absolute;
+    background-color: #fff;
+    top: -75px;
+    left: 30%;
+}
+
+@media screen  and (max-width: 374px) {
+    .home-header{
+        display: block;
+    }
+    .home-header button{
+        min-width: 70px;
+        padding: 7px 20px;
+        float: right;
+    }
+    .home-header img{
+        max-width: 100px;
+        width: 100%;
+        margin-right: 10px;
+    }
+    .cont-1{
+        flex-direction: column;
+    }
+
+    .cont-1 p, .cont-1 h1{
+        width: 100%;
+        text-align: center;
+    }
+    .cont-1 h1{
+        font-size: 25px;
+    }
+
+    .cont-1 .fans, .cont-1 img{
+        width: 100%;
+    }
+
+    .fans button{
+        align-self: center;
+        padding: 10px 15px;
+    }
+
+    .shadow{
+        padding: 15px 35px;
+        flex-direction: column-reverse;
+    }
+    .footer-cont{
+        flex-direction: column;
+    }
+
+    .copyright{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer{
+        padding: 20px;
+    }
+
+    .get-ready{
+        width: 80%;
+        left: 10%;
+    }
+    .get-ready h2{
+        font-size: medium;
+    }
+
+    .footer-logo{
+        margin-top: 75px;
+    }
+    .social{
+        margin-top: 50px;
+    }
+
+    .about, .contact{
+        align-self: flex-start;
+    }
+}
